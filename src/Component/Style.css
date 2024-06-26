@@ -1,0 +1,587 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* NAV SECTION */
+.nav{
+    width: 100vw;
+    height: 87vh;    
+    background-image: url(../images/1_building.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.nav-bar{
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 30px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+.nav-teaser{
+    color: rgb(27, 27, 102);
+    cursor: pointer;
+}
+.nav-teaser > a{
+    text-decoration: none;
+    color: rgb(27, 27, 102);
+}
+.nav-link{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.nav-link > a {
+    text-decoration: none;
+    color: white;
+}
+.topic{
+    margin-top: 120px;
+    margin-left: 100px;
+}
+#dark{
+    color: rgb(27, 27, 102);
+}
+.topic > h1{
+    color: rgb(7, 7, 183);
+    font-size: 4rem;
+    text-shadow: 2px 2px 2px black;
+}
+.btn{
+    padding: 8px;
+    border: solid rgb(7, 7, 192);
+    border-radius: 25px;
+    cursor: pointer;
+    background: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255) 50%,
+    rgb(5, 5, 104) 
+    );
+    background-size: 100% 200%;
+    transition: background-position 0.5s;
+} 
+.btn:hover {
+    background-position: 0 100%;
+    color: white;
+}
+/* INPUT SECTION */
+.input{
+    margin-left: 180px;
+    background-color: rgb(228, 228, 228);
+    height: 70px;
+    width: 70rem;
+    padding-top: 15px;
+    padding-left: 45px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.input input[type="text"]{
+    border: 2px solid rgb(85, 85, 203); 
+    padding: 10px;
+    width: 400px;
+}
+.input button{
+    padding: 12px;
+    width: 230px;
+    background-color: orange;
+    color: white;
+    border: none;
+}
+/* ABOUT SECTION */
+.about{
+    padding-top: 150px;
+    max-width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.abt-img{
+    width: 80%;
+}
+.abt-text{
+    padding-top: 50px;
+}
+.blue-flex{
+    display: flex;
+    gap: 5px;
+}
+.blue-box{
+    height: 40px;
+    width: 5px;
+    background-color: rgb(7, 7, 125);
+    border-radius: 10px;
+}
+/* SALE SECTION STARTS HERE*/
+.main{
+    padding-top: 5rem;
+    max-width: 85%;
+    margin: auto;
+    background-color: white;
+    overflow-y: hidden;
+}
+.main > .blue-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.main > p{
+    text-align: center;
+}
+.sale-card{
+    transition: all 0.2s ease-in-out;
+}
+.sale-card:hover{
+    transform: scale(0.89);
+}
+.sale-display{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+}
+.main > .sale-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* PRICING SECTION STARTS HERE */
+.pricing > .blue-flex {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.pricing > p{
+    text-align: center;
+}
+.price-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%;
+    margin: auto;
+    gap: 5rem;
+    color: #fdf0f0;
+    overflow-y: hidden;
+    padding-bottom: 0.8rem;
+}
+.b-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 15vh;
+    background-color: rgb(32, 32, 116);   
+}
+.b-body{
+    height: 45vh;
+    padding-top: 70px;
+    background-color: rgb(70, 70, 226);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.b-body > p{
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+    font-size:large;
+}
+.white-box{
+    width: 50px;
+    height: 6px;
+    background-color: white;
+    border-radius: 10px;
+}
+.b-body:hover{
+    transition: 0.3s;
+    background-color: orange;
+}
+.buy-btn:hover{
+    transition: 0.3s;
+    background-color: orange;
+}
+.buy-now{
+    display: flex;
+    flex-direction: column;
+    gap:20px ;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+.buy-now:hover{
+    transform: scale(1.05);
+}
+.buy-btn{
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
+    background-color: #021B79;
+    color: white;
+    border-radius: 20px;
+}
+
+/* QUOTE SECTION STARTS HERE */
+.quote{
+    padding-top:5rem;
+    max-width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+.quote-img{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+.q-img1{
+    width: 400px;
+    height: 280px;
+}
+.q-img2{
+    width: 600px;
+    height: 210px;
+}
+
+/* CHOOSE SECTION START HERE */
+.choose{
+    margin-top: 8rem;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #021B79;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.choose > .blue-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.choose-box{
+    background-color: white;
+    height: 35px;   
+    width: 5px;
+}
+.invert-color {
+    filter: invert(1);
+}
+.choose-content{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.choose-btn > .btn{
+    width: 150px;
+}
+
+/* REVIEW SECTION STARTS HERE */
+.main1{
+    color: black;
+    height: 84vh;
+    width: 100vw;
+    padding: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main3{
+    max-width: 90vw;
+    margin: auto;
+    display: flex;
+    border: 2px solid rgb(4, 4, 123);
+    padding: 4rem;
+}
+
+.main5{
+    height: 30vh;
+    height: 10vw;
+    background-color: blue;
+}
+.main4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+.a-img{
+    background-color: rgb(39, 1, 39);
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    border-radius: 50px;
+}
+.h11{
+    font-size: 24px;
+    font-weight: 700;
+}
+.para{
+    font-size: 20px;
+    width: 50vw;
+}
+
+.solid{
+    background-color: rgb(12, 12, 118);
+    height: 25vh;
+    width: 4vw;
+}
+.man{
+    position: relative;
+    left: -4vw;
+}
+.text{
+    margin-left: -4vw;
+}
+
+/* CONTACT SECTION STARTS HERE */
+.contact > .blue-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contact-body{
+    background-color: #021B79;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.b-map{
+    max-width: 60%;
+}
+.b-map > a > img{
+    width: 55rem;
+    height: 30rem;
+}
+.b-form{
+    padding-top: 40px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.b-form > input[type="text"],
+input[type="number"],
+textarea{
+    padding: 15px;
+    width: 450px;
+}
+.b-form > button{
+    width: 150px;
+    padding: 10px;
+    background-color: orange;
+    border-radius: 20px;
+    color: white;
+}
+
+/* FOOTER SECTION STARTS HERE */
+.footer{
+    padding-top: 50px;
+    background-color: #021B79;
+}
+.foot-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+    gap: 20px;
+}
+.foot1{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.icon{
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.invert-color {
+    filter: invert(1);
+}
+.email{
+    padding: 10px;
+}
+.foot1 > button{
+    width: 130px;
+    padding: 10px;
+    background-color: orange;
+    color: white;
+}
+
+.last-foot{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+}
+.last-line{
+    width: 40rem;
+    height: 1px;
+    background-color: white;
+}
+button{
+    cursor: pointer;
+}
+
+/* MEDIA QUERY */
+@media (max-width:450px) {
+    .invert-color{
+        display: none;
+    }
+    .nav-teaser{
+        padding-left: 20px;
+    }
+    .input{
+        padding-top: -200px;
+    }
+}
+/* MEDIA QUERY */
+@media (max-width: 700px) {
+    .nav{
+        height: 60vh;
+    }
+    .nav-bar {
+        padding-left: 0;
+        padding-right: 0;
+        
+    }
+    .nav-teaser{
+        color: black;
+    }
+    .nav-link{
+        padding-right: 20px;
+    }
+    .nav-link > a{
+        gap: 20px;
+        color:white;
+    }
+    .topic {
+        margin-left: 20px; 
+    }
+    .topic > h1 {
+        font-size: 2rem;
+    }
+    .topic > p {
+        color: white;
+    }
+
+    .input {
+        margin-left: 20px;
+        width: 90%;
+        height: 12rem;
+        flex-direction: column;
+        padding-left: 15px;
+    }
+
+    .input input[type="text"] {
+        width: 100%;
+    }
+
+    .input button {
+        width: 100%;
+    }
+    .about {
+        padding-top: 5rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .abt-text > .blue-flex {
+        justify-content: center;
+    }
+    .abt-img, .abt-text {
+        width: 100%;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .sale-display {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .price-display {
+        flex-direction: column;
+        gap: 2rem;
+        /* height: 80vh; */
+        
+    }
+    .quote {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .q-img1, .q-img2 {
+        width: 100%;
+        height: auto;
+    }
+    .choose-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .main1 {
+        height: auto;
+        padding: 2rem;
+    }
+    .main3 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;    
+        padding: 1rem;
+    }
+
+    .contact-body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .b-map > a > img {
+        width: 100%;
+        height: auto;
+    }
+
+    .b-form {
+        padding-left: 20px;
+        width: 100%;
+    }
+
+    .b-form > input[type="text"], input[type="number"], textarea {
+        width: 90%;
+    }
+    .footer{
+        width: 100vw !important;
+    }
+    .foot-flex {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .email{
+        width:50vw;
+    }
+    .foot1{
+        width: 100vw;
+    }
+}
