@@ -3,7 +3,7 @@ import { items } from "../utils";
 
 export default function Sale() {
   return (
-    <div className="main">
+    <div className="main" id="sale">
       <div className="blue-flex">
         <div className="blue-box" />
         <h1>House For Sale</h1>
