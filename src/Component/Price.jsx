@@ -4,7 +4,7 @@ import { data } from "../utils";
 export default function Price() {
   return (
     <>
-      <div className="pricing">
+      <div className="pricing" id="price">
         <div className="blue-flex">
           <div className="blue-box" />
           <h1>Our Pricing</h1>
