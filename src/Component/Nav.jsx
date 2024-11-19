@@ -7,7 +7,7 @@ export default function Nav(){
         <div className="nav" id="nav">
           <div className="nav-bar">
             <div className="nav-teaser">
-              <a href='#nav'><h2>TEASER</h2></a>
+              <a href='#nav'><h2>LocaLiving</h2></a>
             </div>
             <div className="nav-link">
               <a href="#about">ABOUT</a>
