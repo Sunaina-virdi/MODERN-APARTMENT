@@ -11,6 +11,8 @@ export default function Nav(){
             </div>
             <div className="nav-link">
               <a href="#about">ABOUT</a>
+              <a href="#sale">SALE</a>
+              <a href="#price">PRICING</a>
               <a href="#contact">CONTACT</a>
               {/* <img src={img} className="invert-color" alt="icon" height='25' width='30'/> */}
             </div>
